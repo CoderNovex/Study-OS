@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study-OS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div><p class="eyebrow">CLASS 9 • STUDY COMMAND CENTER</p><h1>Study-OS 🤖</h1><p class="muted">Learn. Practice. Revise. Repeat.</p></div>
+      <div class="date" id="date"></div>
+    </header>
+
+    <section class="hero card">
+      <div><p class="eyebrow">TODAY'S MISSION</p><h2 id="greeting">Ready to study?</h2><p class="muted">Pick one important task and start. Small wins stack up.</p></div>
+      <button id="focusBtn" class="primary">Start Focus ⏱️</button>
+    </section>
+
+    <section class="grid stats">
+      <div class="card stat"><span>🔥 Streak</span><strong id="streak">1 day</strong></div>
+      <div class="card stat"><span>✅ Tasks</span><strong id="taskCount">0 / 0</strong></div>
+      <div class="card stat"><span>⏱️ Focus</span><strong id="focusTime">00:00</strong></div>
+      <div class="card stat"><span>🎯 Progress</span><strong id="progress">0%</strong></div>
+    </section>
+
+    <section class="grid main-grid">
+      <div class="card panel">
+        <div class="panel-head"><h3>Today's Tasks</h3><button id="addTask">+ Add</button></div>
+        <div id="tasks" class="tasks"></div>
+      </div>
+      <div class="card panel">
+        <div class="panel-head"><h3>Subjects</h3></div>
+        <div class="subjects">
+          <button class="subject" data-subject="Mathematics"><span>➗</span><b>Mathematics</b><small>Practice</small></button>
+          <button class="subject" data-subject="Science"><span>🔬</span><b>Science</b><small>Understand</small></button>
+          <button class="subject" data-subject="Social Science"><span>🌍</span><b>Social Science</b><small>Recall</small></button>
+          <button class="subject" data-subject="English"><span>📖</span><b>English</b><small>Language</small></button>
+          <button class="subject" data-subject="Hindi"><span>📝</span><b>Hindi</b><small>Language</small></button>
+          <button class="subject" data-subject="IT 402"><span>💻</span><b>IT 402</b><small>Skills</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card panel quick"><h3>Quick commands</h3><div class="commands"><button>📚 Study</button><button>🧪 Test</button><button>🔁 Revise</button><button>🧠 Weakness</button><button>📝 Notes</button><button>📊 Weekly Check</button></div></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
